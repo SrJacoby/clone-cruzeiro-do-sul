@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --var01: #D8EFF9;
+    --var02: #32BAF3;
+    --var03: #2357FF;
+    --var04: #0B4279;
+    --var05: #2A65A1;
+    --var06: #C3DEEC; 
+    --var07: #639FDB;
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    position: fixed;
+    width: 100vw;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 58px 0 0 175px;
+
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 92vh;
+    background-color: #F7F8F9;
+    text-align: center;
+}
+
+
+.left-container {
+    line-height: 30px;
+    width: 56%;
+    margin: 7rem 0 0 6rem;
+}
+
+.office-container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.office-container p, .office-container ul {
+    text-align: left;
+    font-weight: 500;
+    color: #202125;
+    word-spacing: 1px;
+}
+
+.office-container ul li{
+    list-style-type: none;
+}
+
+.office-container ul li:before {
+    content: '\2022';
+    margin: 0 15px;
+    color: gray; 
+}
+
+.office-container img{
+    margin-bottom: 0.5rem;
+}
+.office-container h2{
+    margin-bottom: 0.8rem;
+}
+
+.office-apps-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 250px;
+    justify-content: center;
+
+}
+
+.office-apps-container img{
+    padding: 0.5rem;
+    max-width: 45px;
+    max-height: 40px;
+}
+
+.left-container a {
+    padding-top: 2rem;
+    display: block;
+    color: var(--var03);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.right-container {
+    height: 150vh;
+    width: 60%;
+    text-align: center;
+    background-color: var(--var01);
+    border-end-start-radius: 50%;
+    border-start-start-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.login-container{
+    width: 60%;
+    margin: 0 auto;
+    word-spacing: 1px;
+    margin-top: 8rem;
+}
+
+.login-container h2{
+    color: var(--var04);
+
+}
+
+.login-container p, .login-container ul, .login-container h2{
+    margin-bottom: 1.5rem;
+}
+
+.login-container p, .login-container ul {
+    text-align: left;
+    font-weight: 500;
+    color: #202125;
+    word-spacing: 1px;
+}
+
+.login-container li{
+    margin-bottom: 0.8rem;
+    list-style: none;
+}
+
+.login-container ul li:before {
+    content: '\2022';
+    margin-right: 10px;
+    color: var(--var02); 
+    font-size: 1.5rem;
+}
+
+.right-container img {
+    width: 25px;
+}
+
+.login-container a{
+    display: flex;
+    justify-content: center;
+}
+
+.login-container img{
+    margin-right: 8px;
+}
+
+.enter, .forgot-password{
+    flex-direction: row;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    width: 90%;
+    font-weight: bold;
+    margin: 1rem 0;
+    text-decoration: none;
+}
+
+.enter{
+    background-color: var(--var04);
+    padding: 12px 25px;
+    color: #fff;
+}
+
+.enter:hover{
+    background-color: var(--var05);
+}
+
+.forgot-password{
+    background-color: #fff;
+    padding: 12px 25px;
+    color: var(--var04);
+    border: 1px solid var(--var04);
+}
+
+.forgot-password:hover{
+    background-color: var(--var06);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 25px;
+    gap: 1rem;
+    height: 8vh;
+    position: relative;
+    background-color: #F7F8F9;
+}
+
+footer img{
+    padding: 0 10px;
+    max-width: 170px;
+
+}
+
+footer a{
+    color: var(--var07);
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-right: 1px solid gray;
+    padding-right: 25px;
+}
+
+.last{
+    border: none;
+}
+
+.privacity {
+    margin-left: auto;
+    border: none;
+    padding-right: 10px;
+}
+
+@media (max-width: 1300px){
+
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    .logo {
+        padding: 20px 0 0 58px;
+    
+    }
+    .box-container{
+        flex-direction: column;
+        text-align: left;
+        margin: 0;
+        align-items: stretch;
+        margin-bottom: 8vh;
+        min-height: 800px;
+        background-image: url(../img/cruzeiro.png);
+        background-repeat: no-repeat;
+        background-position: 250px;
+        width: 100%;
+        background-size: 800px;
+        position: relative;
+    }
+
+    body{
+        position: static;
+ 
+    }
+
+    .office-container img{
+        display: none;
+    }
+
+    .left-container a{
+        text-align: center;
+    }
+
+    .office-container {
+        width: 90%;
+    }
+
+    .office-container h2{
+        text-align: center;
+    }
+
+    .right-container, .left-container{
+        width: 100%;
+        margin-left: 0;
+    }
+    .right-container{
+        background-color: transparent;
+        border-radius: 0;
+        margin-top: 1rem
+    }
+
+    .login-container{
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    .login-container a{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 0.5rem;
+    }
+
+    footer{
+        flex-direction: column;
+        margin-top: auto;
+        height: 8vh;
+        background-color: transparent;
+    }
+
+    footer a{
+        border: none;
+    }
+    .privacity {
+        padding-right: 0;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+
+    }
+
+    
+}
